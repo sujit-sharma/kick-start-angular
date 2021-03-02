@@ -17,6 +17,7 @@ import {Router, RouterModule} from '@angular/router';
     RouterModule.forRoot([
       {path: 'crisis-list', component: CrisisListComponent},
       {path: 'heroes-list', component: HeroesListComponent},
+      {path: '', redirectTo: './heroes-list', pathMatch: 'full'},
     ]),
   ],
   providers: [],
